@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>email</title>
+</head>
+<style>
+
+#main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 254px;
+    width: 600px;
+}
+#profile{
+    height: 140px;
+    max-width: 140px;
+    border-radius: 50%;
+    margin-top: -200px;
+    background-color: white;
+    margin-left: 60px;
+}
+#imgBgColor{
+    height: 254px;
+    width: 156px;
+    background-color: #4A3AFF;
+   
+}
+#numOne{
+    margin-top: -7px;
+}
+#numTwo{
+    margin-top: -7px;
+}
+#name{
+    font-weight: bold;
+}
+#title{
+    color: #4A3AFF;
+}
+#qCode{
+    height: 100px;
+    max-width: 100px;
+    margin-top: 30px;
+}
+@media only screen and (max-width: 650px) {
+    #main{
+        width: 400px;
+        height: 500px;
+    }
+    #profile{
+        height: 130px;
+        max-width: 130px;
+        position: absolute;
+        margin-top: -70px;
+        border-radius: 60px;
+    }
+    #imgBgColor{
+        height: 100px;
+        width: 390px;
+        margin-left: 5px;
+    }
+    #containerTwo{
+        margin-top: 190px;
+        margin-left: -350px;
+    }
+    #qCode{
+        height: 120px;
+        max-width: 120px;
+        margin-left: -350px;
+        margin-top: 300px;
+    }
+
+}
+</style>
+<body>
+
+    <div class="border rounded sm:shadow border-none"  id="main">
+        <div id="containerOne">
+            <div id="imgBgColor"></div>
+            <img class="absolute" src="Photo.png" alt="" id="profile">
+        </div>
+        <div class="ml-16 mt-14" id="containerTwo">
+            <h2 id="name">Tanvir Absur</h2>
+            <p id="title">CEO & Co Founder</p>
+            <br>
+            <div class="flex"><img class="h-4 max-w-4" src="call.png" alt=""> <p class="ml-3 mb-4" id="numOne">01606531300</p></div>
+            <div class="flex"><img class="h-4 max-w-4" src="Icon Email.png" alt=""> <p class="ml-3" id="numTwo">tanvirabsur@gmail.com</p></div>
+        </div>
+        <div class="mt-10" id="containerThree">
+            <img src="Vector.png" alt="" id="qCode">
+        </div>
+    </div>
+
+    <script>
+    tailwind.config = {
+      theme: {
+      extend: {
+        screens: {
+      'sm': '360px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    }
+  },
+  colors: {
+   
+  }
+ }
+ }
+    
+  </script>
+</body>
+</html>
